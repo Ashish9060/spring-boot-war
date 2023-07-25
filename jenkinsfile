@@ -40,11 +40,11 @@ pipeline{
         }
         success{
             echo "========pipeline executed successfully ========"
-            slackSend channel: 'youtubejenkins', message: 'Job success'
+            slackSend channel: 'jenkins', message: 'Job success'
         }
         failure{
             echo "========pipeline execution failed========"
-            slackSend channel: 'youtubejenkins', message: 'Job failed'
+            slackSend channel: 'jenkins', message: 'Job failed'
         }
     }
 }
